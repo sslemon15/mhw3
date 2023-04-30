@@ -41,10 +41,10 @@ function onJsonWeather(json){
     
     const citta = json.location.name;  
     const country = json.location.country;
-
+    const date = results_day.forecastday[0].date;
     const testo = document.createElement('h3');
     testo.textContent= "Previsioni  meteo " + citta + ' (' + country +')' + " il giorno d'arrivo (" + date + ") " + ": " ;
-    const date = results_day.forecastday[0].date;
+    
 
     const max_temp_data = results_day.forecastday[0].day.maxtemp_c;
     const max_temp = document.createElement('div');
