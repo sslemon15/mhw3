@@ -1,0 +1,373 @@
+
+
+body{
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    width: 100vw;
+    background-color: rgb(232, 228, 228);
+}
+
+#flex{
+    display: flex;
+    justify-content: center;
+}
+
+
+#flex label{
+    padding: 5px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form label .submit{
+    font-size: 1.2rem;
+}
+
+
+header{
+    
+    background-image: url(./estero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100vw;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#top{
+    background-color: rgb(0, 7, 5);
+    font-size: 0.875em;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+  }
+
+
+header #sfondo{
+    text-align: center;
+    z-index: 1;
+    line-height: 3.4rem;
+}
+
+header #sfondo h1{
+    font-size: 2.25rem;
+    font-weight: 400px;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 20px;
+    line-height: 1.6rem;
+    
+    
+} 
+
+header #sfondo #frase{
+    
+    font-weight: 400;
+    text-align: center;
+    color: aliceblue;
+    font-style: italic;
+    
+   
+}
+
+
+#links a {
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+  }  
+
+
+
+#links a.button:hover {
+    background-color: white;
+    color: black;
+  } 
+
+a.button{
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+h2{
+    color: black;
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+p.legenda{
+    color: black;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+}
+
+ #album-view{
+    margin: 20px 0;
+	width: 74%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+
+
+ .book{
+    margin: 10px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+    width: 90%;
+	cursor: pointer;
+	background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+   
+
+
+}
+
+#meteo{
+    margin: 20px;
+    padding: 20px;
+	width: 74%;
+	margin: auto;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+}
+
+h3{
+    font-size: 2rem;
+    padding: 10px;
+    width: 95%;
+}
+
+.meteo{
+    margin: 10px;
+	padding: 10px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+	cursor: pointer;
+	background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+}
+
+
+
+
+#album-view .book:hover, #meteo .meteo:hover {
+	background-color:rgba(160, 137, 18, 0.1);
+}
+
+.prezzo{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.color{
+    color:rgb(205, 164, 52);
+}
+
+.b_a_r{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.biglietto{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.aeroporto{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+#flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input[type=text]{
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+    font-size: 1rem;
+}
+
+input[type=submit]{
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+    font-size: 0.8rem;
+}
+
+input[type=text]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.linea{
+
+    border-bottom: 2px solid black;
+
+}
+
+#meteo .formato{
+
+    max-height: 80px;
+    max-width: 80px;
+    padding: 15px;
+
+}
+
+
+#menu {
+    display: none;
+  }
+  
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 15px;
+  }
+
+
+
+
+@media (max-width: 720px) {
+    #links {
+      display: none;
+    }
+  
+    #menu {
+      display: block;
+    }
+    header #sfondo h1{
+        font-size: 1.75rem;
+        font-weight: 400px;
+        text-align: center;
+        color: aliceblue;
+        margin-bottom: 10px;
+        padding-top: 15px;
+        
+        
+    } 
+    #flex{
+        margin-top: -25px;
+    }
+    
+    #flex div{
+        margin: auto;
+    }
+    header #sfondo #frase{
+        font-size: 0.9rem;
+        font-weight: 400;
+        text-align: center;
+        color: aliceblue;
+        font-style: italic;
+        
+       
+    }
+
+    form label{
+        padding: 5px;
+        font-size: 1rem;
+    }
+    
+    form label .submit{
+        font-size: 1rem;
+        
+    }
+
+
+    
+    header{
+        background-position: left;
+   
+     
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    p.legenda{
+        font-size: 1rem;
+    }
+
+    #album-view{
+        width: 100%;
+    }
+
+    .biglietto .b_a_r{
+        font-size: 0.9rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    #meteo{
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px){
+
+ #sfondo form #frase{
+        font-size: 0.8rem;
+        font-weight: 300;
+        text-align: center;
+        color: aliceblue;
+        font-style: italic;
+        
+       
+    }
+
+
+    p.legenda{
+        font-size: 0.9rem;
+        padding: 2px;
+    }
+}
